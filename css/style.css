@@ -1,7 +1,20 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  --blue01: #b3dee5;
+  --cream: #fae6b1;
+  --oj: #ffa101;
+  --darkblue01: #31525b;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: pink;
 }
 
 body {
@@ -9,31 +22,69 @@ body {
   height: 250vh;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
+
+html body {
+  background-color: var(--blue01);
+
 }
 
-button {
-  cursor: pointer;
+a > h1 {
+  font-size: 2rem;
+  color: white;
 }
 
-::selection {
-  background-color: pink;
+a > h1.scrolled {
+  font-size: 2rem;
+  color: black;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
+.bg-dark {
+  background:transparent !important;
+  transition:0.7s ease;
 }
 
-::-webkit-scrollbar-track {
-  background-color: pink;
+.bg-dark.scrolled {
+  background: white !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: green;
+.top-notice {
+  background-color: var(--oj);
+  font-size: 13px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: darkgreen;
+.nav-link {
+  color: white;
+  margin: 0 1rem;
+}
+
+.nav-link.scrolled {
+  color: black;
+  margin: 0 1rem;
+}
+
+
+button.nav-link.btn {
+  background-color: var(--oj);
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.6s;
+}
+
+button.nav-link.btn:hover {
+  background-color: #ed9600;
+  color: white;
+  outline: none;
+}
+
+
+
+.navbar-toggler-icon {
+  background-color: var(--oj);
+
+}
+
+.navbar-toggler {
+  background-color: var(--oj);
+
 }
