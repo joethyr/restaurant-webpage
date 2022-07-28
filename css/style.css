@@ -2,9 +2,13 @@
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
   --blue01: #b3dee5;
-  --cream: #fae6b1;
-  --oj: #ffa101;
-  --darkblue01: #31525b;
+  --cream: #F8F0C6;
+  --mustard: #D8B95D;
+  --darkblue01: #22242E;
+  --goodred: #C3332B;
+  --aestheticblack: #1c1c1e;
+  --darkred: #ad2e26;
+  --ivory: #FFFEF2;
 }
 
 * {
@@ -22,10 +26,8 @@ body {
   height: 250vh;
 }
 
-
 html body {
-  background-color: var(--blue01);
-
+  background-color: var(--cream);
 }
 
 a > h1 {
@@ -33,23 +35,13 @@ a > h1 {
   color: white;
 }
 
-a > h1.scrolled {
-  font-size: 2rem;
-  color: black;
-}
-
 .bg-dark {
-  background:transparent !important;
-  transition:0.7s ease;
+  background: transparent !important;
+  transition: 0.7s ease;
 }
 
 .bg-dark.scrolled {
-  background: white !important;
-}
-
-.top-notice {
-  background-color: var(--oj);
-  font-size: 13px;
+  background: var(--darkblue01) !important;
 }
 
 .nav-link {
@@ -57,34 +49,84 @@ a > h1.scrolled {
   margin: 0 1rem;
 }
 
-.nav-link.scrolled {
+/* .nav-link.scrolled {
   color: black;
   margin: 0 1rem;
-}
-
+} */
 
 button.nav-link.btn {
-  background-color: var(--oj);
-  color: black;
+  background-color: var(--goodred);
+  color: white;
   padding-left: 10px;
   padding-right: 10px;
   transition: 0.6s;
 }
 
-button.nav-link.btn:hover {
-  background-color: #ed9600;
+button.nav-link.btn:is(:hover, :focus) {
+  background-color: var(--darkred);
   color: white;
   outline: none;
 }
 
-
-
 .navbar-toggler-icon {
-  background-color: var(--oj);
-
+  background-color: var(--goodred);
 }
 
 .navbar-toggler {
-  background-color: var(--oj);
+  background-color: var(--goodred);
+}
 
+/* banner
+.banner {
+  min-height: 660px;
+  display: grid;
+  align-items: center;
+} */
+
+/*-----------------------------------*\
+  #banner
+\*-----------------------------------*/
+
+.banner-burger { display: none; }
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: 145px 60px;
+  text-align: center;
+}
+
+.banner-jingle {
+  color: #ffeba9;
+  margin-block-end: 25px;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 36px;
+}
+
+.banner-title {
+  color: var(--cream);
+  font-weight: 700;
+  font-size: 60px;
+  opacity: 0.88;
+}
+
+.banner-text {
+  color: var(--cream);
+  margin-block: 15px 30px;
+}
+
+.banner .btn {
+  background-color: var(--darkblue01);
+  color: white;
+}
+
+.banner .btn:is(:hover, :focus) {
+  background-color: var(--aestheticblack);
+  color: rgb(199, 199, 199);
+}
+
+.btn-lg {
+  --bs-btn-padding-y: 0.8rem;
+  --bs-btn-padding-x: 2rem;
 }
