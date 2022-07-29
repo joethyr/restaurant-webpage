@@ -76,16 +76,7 @@ button.nav-link.btn:is(:hover, :focus) {
   background-color: var(--goodred);
 }
 
-/* banner
-.banner {
-  min-height: 660px;
-  display: grid;
-  align-items: center;
-} */
-
-/*-----------------------------------*\
-  #banner
-\*-----------------------------------*/
+/* BANNER */
 
 .banner-burger { display: none; }
 
@@ -101,19 +92,20 @@ button.nav-link.btn:is(:hover, :focus) {
   color: #ffeba9;
   margin-block-end: 25px;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 .banner-title {
   color: var(--cream);
   font-weight: 700;
-  font-size: 60px;
+  font-size: 2rem;
   opacity: 0.88;
 }
 
 .banner-text {
   color: var(--cream);
   margin-block: 15px 30px;
+  font-size: 1rem;
 }
 
 .banner .btn {
@@ -130,3 +122,51 @@ button.nav-link.btn:is(:hover, :focus) {
   --bs-btn-padding-y: 0.8rem;
   --bs-btn-padding-x: 2rem;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .banner-jingle, .banner-title {
+    font-size: 2.5rem;
+  }
+  
+}
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+  .banner-jingle, .banner-title {
+    font-size: 3rem;
+  }
+  .banner-jingle, .banner-title, .banner-text {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .btn-banner {
+    display: flex;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .banner-title {
+    font-size: 4rem;
+  }
+
+  .banner-burger { display: inline-block; }
+
+  .banner-container {
+    display:flex;
+    justify-content: space-between;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
