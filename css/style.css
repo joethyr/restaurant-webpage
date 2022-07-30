@@ -194,7 +194,7 @@ ul.menu-list-btns {
 }
 
 .image-grid {
-  --num-cols: 4;
+  /* --num-cols: 4; */
   box-sizing: border-box;
   padding: 4rem 1rem;
   display: grid;
@@ -216,6 +216,12 @@ ul.menu-list-btns {
   color: white;
 }
 
+.deal-image-container > button {
+  position: absolute;
+  top: 9rem;
+  left: 50px;
+}
+
 .deal-image-container > img {
   width: 100%;
   height: 100%;
@@ -225,15 +231,35 @@ ul.menu-list-btns {
   transition: all 0.5s ease;
 }
 
-.deal-image-container >img:hover {
-  transform: scale(1.2);
+.deal-image-container:is(:hover, :focus-within) .deal-img {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+
+.about-section {
+  background-color: var(--darkred);
+}
+.about-info {
+  padding: 3rem 1rem 2rem 1rem;
+  color: var(--cream);
+}
+
+.about-info > ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.about-list-column-top {
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: var(--goodred);
   text-align: center;
+  color: var(--cream);
 }
 
 footer > p {
@@ -304,6 +330,14 @@ footer > p {
 
   .banner-burger {
     display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  }
+
+  .banner-burger:hover {
+    transform: scale(1.05);
   }
 
   .banner-container {
