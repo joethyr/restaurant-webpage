@@ -1,7 +1,6 @@
 :root {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  --blue01: #b3dee5;
   --cream: #f8f0c6;
   --mustard: #d8b95d;
   --darkblue01: #22242e;
@@ -43,11 +42,6 @@ a > h1 {
   color: white;
   margin: 0 1rem;
 }
-
-/* .nav-link.scrolled {
-  color: black;
-  margin: 0 1rem;
-} */
 
 button.nav-link.btn {
   background-color: var(--goodred);
@@ -190,11 +184,11 @@ ul.menu-list-btns {
 
 /* DEALS */
 .deal-section {
-  background-color: #d8b95d;
+  background-color: var(--mustard);
 }
 
 .image-grid {
-  /* --num-cols: 4; */
+  --num-cols: 4;
   box-sizing: border-box;
   padding: 4rem 1rem;
   display: grid;
@@ -267,13 +261,25 @@ footer > p {
   padding: 0.5rem;
 }
 
+.fa-brands:hover {
+  transform: scale(1.4);
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .menu {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  .about-list-column-top {
+    font-weight: bold;
+    font-size: 20px;
   }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -284,10 +290,6 @@ footer > p {
   }
 
   /* MENU */
-
-  /* .menu {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
-  } */
 
   .menu-text {
     max-width: 600px;
@@ -333,7 +335,6 @@ footer > p {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
-  }
   }
 
   .banner-burger:hover {
