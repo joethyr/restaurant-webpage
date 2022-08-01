@@ -24,7 +24,6 @@ html body {
   background-color: var(--cream);
 }
 
-
 /* NAVBAR */
 
 a > h1 {
@@ -67,7 +66,6 @@ button.nav-link.btn:is(:hover, :focus) {
 .navbar-toggler {
   background-color: var(--goodred);
 }
-
 
 /* BANNER */
 
@@ -236,8 +234,11 @@ ul.menu-list-btns {
 /* ABOUT */
 
 .about-section {
-  background-color: var(--darkred);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .about-info {
   padding: 3rem 1rem 2rem 1rem;
   color: var(--cream);
@@ -269,7 +270,10 @@ footer > p {
   transform: scale(1.4);
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -278,12 +282,10 @@ a, a:hover, a:focus, a:active {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
   .about-list-column-top {
     font-weight: bold;
     font-size: 20px;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
