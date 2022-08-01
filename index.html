@@ -25,6 +25,25 @@
       href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
       rel="stylesheet"
     />
+    <!-- preload images -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/banner-bg.jpg"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/banner-burger.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/banner-bg-top.jpg"
+      media="min-width(768px)"
+    />
     <!-- fontAwesome CDN -->
     <link
       rel="stylesheet"
@@ -104,7 +123,7 @@
     <section
       class="banner shadow"
       id="home"
-      style="background-image: url('/images/banner-bg-top.jpg')"
+      style="background-image: url('images/banner-bg-top.jpg')"
     >
       <div class="container banner-container">
         <div class="banner-content">
@@ -120,7 +139,7 @@
         </div>
         <figure class="banner-burger">
           <img
-            src="/images/banner-burger.png"
+            src="images/banner-burger.png"
             loading="lazy"
             alt="Burger"
             class="banner-img"
@@ -356,7 +375,7 @@
     <section
       class="about-section shadow"
       id="about"
-      style="background-image: url('/images/banner-bg.jpg')"
+      style="background-image: url('images/banner-bg.jpg')"
     >
       <div
         class="container about-info d-flex justify-content-between flex-wrap"
