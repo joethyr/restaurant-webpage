@@ -24,6 +24,9 @@ html body {
   background-color: var(--cream);
 }
 
+
+/* NAVBAR */
+
 a > h1 {
   font-size: 2rem;
   color: white;
@@ -64,6 +67,7 @@ button.nav-link.btn:is(:hover, :focus) {
 .navbar-toggler {
   background-color: var(--goodred);
 }
+
 
 /* BANNER */
 
