@@ -7,7 +7,7 @@ The logo located on the navbar was created in Adobe Illustrator as vector file.
 
 ## Links
 
-[Github Pages](https://joethyr.github.io/restaurant-website/)
+[Github Pages](https://joethyr.github.io/restaurant-webpage/)
 
 ## Sources
 
